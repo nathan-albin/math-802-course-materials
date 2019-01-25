@@ -4,6 +4,17 @@ I'll use this repository to distribute any extra (non-assignment) materials for 
 
 Below, you'll find tips on setting up your development environment correctly.  I'll probably update this throughout the semester to address various snags.
 
+## Setup ideas
+
+If you can't (or don't want to) use the recommended setup in the syllabus, here are a few ideas to get you started.
+
+1. You can choose a different IDE.  Spyder, for example, is a more traditional-looking IDE and can be installed easily in Anaconda.
+1. You can simplify and simply use a text editor + command prompt.  Some good text editors I use regularly include.
+    - Emacs (or Spacemacs)
+    - vim
+    - Sublime
+1. If you need or prefer a purely online option, CoCalc might work well for you.  They have free accounts (though you may want to upgrade for a few dollars per month while enrolled in this class to have more stable access), a huge number of pre-installed Python packages, and stellar technical support.
+
 ## Helpful links
 
 Here is a collection of documentation/tutorials that might come in handy.
