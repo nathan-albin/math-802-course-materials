@@ -118,3 +118,15 @@ Similarly, to run ``pytest``, I just do this:
     ============================ 7 failed in 0.38 seconds =============================
 
 If you want to understand the `-v` and `--tb=no` parts, you can read the documentation of ``pytest``, but basically speaking the first one makes it tell me the results of individual tests and the second part keeps it from spitting out a bunch of code showing where the errors occurred.
+
+## Common issues
+
+Here are some common issues that come up, and tips to deal with them.
+
+### Issues with VS Code
+
+- **Run Active File:** The menu command Terminal -> Run Active File does not seem to work well with the VS Code's Python setup.  It tries to run the file as an executable rather than explicitly calling the Python interpreter.  There's probably a way to make it work, but it seems easier just to use the run function provided by the VS Code Python Extension.  You can find it in the Command Palette (`Ctrl+Shift+P`).  It's called "Python: Run Python File in Terminal".  (No, you don't have to type that whole thing.  If you're new to the command palette, you should read a little about it.  It will speed you up.)  If you want, you can create a keyboard shortcut for this command (in the command palette, find "Preferences: Open Keyboard Shortcuts").  For example, you could bind `Ctrl+P R` to make VS Code run a python file in terminal.
+
+- **Can't run Pylint or Pytest:** If you're sure you have those in your Python environment, then this is probably because you're not actually using that environment.  If you haven't set up the environment for your project yet, make sure you are in the base directory (the one where you'll clone all the assignment repositories) and run "Python: Select Interpreter" from the command palette.  Then pick the `math802` environment, or whatever you named it.  This will modify a file in the folder `.vscode`, so you shouldn't have to run it again.  If you've dont that and you're still having problems, see the next note.
+
+- **Python environment isn't activating:** I've noticed that on several machines (mine included), the original terminal that VS Code opens does not have the selected Python environment activated.  (You can check this by looking for the environment name to the left of the command prompt.)  From what I've seen, there are two ways to address this.  First, if you use VS Code to run a Python file, it will cause the environment to activate.  Second, if you kill the terminal (the trashcan icon on the top right of the terminal window) and then open a new terminal ``Ctrl+` ``, you should see the python environment activate (assuming you've set the interpreter as in the previous note).
