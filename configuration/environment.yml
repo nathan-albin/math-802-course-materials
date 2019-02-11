@@ -11,3 +11,4 @@ dependencies:
   - scipy=1.1.0
   - pylint=2.2.2
   - pytest=4.1.0
+  - sympy=1.3
