@@ -5,4 +5,4 @@
 *.snm
 *.synctex.gz
 *.toc
-
+.vscode/
