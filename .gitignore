@@ -6,3 +6,5 @@
 *.synctex.gz
 *.toc
 .vscode/
+.ipynb_checkpoints/
+__pycache__/
