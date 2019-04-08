@@ -12,3 +12,4 @@ dependencies:
   - pylint=2.2.2
   - pytest=4.1.0
   - sympy=1.3
+  - ipywidgets
